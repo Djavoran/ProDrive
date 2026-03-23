@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Termin vereinbaren</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1 class="logo">
+  <a href="index.html">
+    <img src="bilder/logo.png" alt="ProDrive Logo">
+    ProDrive
+  </a>
+</h1>
+
+<nav>
+<a href="index.html">Startseite</a>
+<a href="index.html#leistungen">Leistungen</a>
+<a href="index.html#tuev">TÜV</a>
+<a href="index.html#info">Kontakt</a>
+<a href="termine.html">Termin</a>
+</nav>
+</header>
+
+
+<section class="termin-section">
+
+<h2>Termin vereinbaren</h2>
+<p>Füllen Sie das Formular aus und wir melden uns schnellstmöglich zur Terminbestätigung.</p>
+
+<form class="termin-form">
+
+<label>Name</label>
+<input type="text" placeholder="Ihr Name" required>
+
+<label>E-Mail</label>
+<input type="email" placeholder="Ihre E-Mail" required>
+
+<label>Telefon</label>
+<input type="tel" placeholder="Ihre Telefonnummer">
+
+<label>Service</label>
+<select>
+<option>Inspektion</option>
+<option>Reparatur</option>
+<option>Reifenservice</option>
+<option>TÜV</option>
+<option>Tuning</option>
+</select>
+
+<label>Wunschtermin</label>
+<input type="date" required>
+
+<label>Nachricht</label>
+<textarea rows="4" placeholder="Weitere Informationen"></textarea>
+
+<div class="checkbox-group">
+  <input type="checkbox" id="newsletter">
+  <label for="newsletter">
+    Ich möchte den Newsletter erhalten und akzeptiere die 
+    <a href="datenschutz.html">Datenschutzerklärung</a>.
+  </label>
+</div>
+
+<button type="submit">Termin anfragen</button>
+
+</form>
+
+</section>
+
+
+<footer class="footer">
+
+<div class="footer-container">
+
+<div class="footer-section">
+<h3>ProDrive</h3>
+<p>Ihre zuverlässige Kfz-Werkstatt für Reparatur, Wartung, Service und Tuning.</p>
+</div>
+
+<div class="footer-section">
+<h3>Kontakt</h3>
+<p>Musterstraße 1</p>
+<p>12345 Musterstadt</p>
+<p>Telefon: 01234 / 56789</p>
+<p>Email: info@prodrive.de</p>
+</div>
+
+<div class="footer-section">
+<h3>Rechtliches</h3>
+<p><a href="impressum.html">Impressum</a></p>
+<p><a href="datenschutz.html">Datenschutz</a></p>
+</div>
+
+</div>
+
+<div class="footer-bottom">
+<p>© 2026 ProDrive – Alle Rechte vorbehalten</p>
+</div>
+
+</footer>
+
+</body>
+</html>
