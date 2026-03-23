@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> ProDrive </title>
+  <link rel="stylesheet" href="style.css">
+
+ 
+</head>
+<body>
+
+<header>
+
+<h1 class="logo">
+  <a href="index.html">
+    <img src="bilder/logo.png" alt="Logo">
+    ProDrive
+  </a>
+</h1>
+
+<div class="menu-icon" onclick="toggleMenu()">
+☰
+</div>
+
+<nav id="menu">
+  <a href="#leistungen" onclick="toggleMenu()">Leistungen</a>
+  <a href="#tuev" onclick="toggleMenu()">TÜV</a>
+  <a href="#info" onclick="toggleMenu()">Über uns & Kontakt</a>
+  <a href="termine.html">Termin</a>
+</nav>
+
+</header>
+<div class="hero">
+  <h2>Willkommen bei ProDrive</h2>
+  <p>Reparatur • Wartung • Service • Tuning</p>
+</div>
+
+<section id="leistungen">
+  <h2>Unsere Leistungen</h2>
+  <div class="services">
+    <div class="service">
+  <a href="inspektion.html">
+    <img src="bilder/service1.jpg" alt="Inspektion">
+    <h3>Inspektion & Wartung</h3>
+    <p>Wir kümmern uns um die regelmäßige Wartung und Inspektion Ihres Fahrzeugs, damit es sicher und zuverlässig bleibt.</p>
+  </a>
+</div>
+
+<div class="service">
+  <a href="reparaturen.html">
+    <img src="bilder/service2.jpg" alt="Reparaturen">
+    <h3>Reparaturen</h3>
+    <p>Von kleinen Ausbesserungen bis hin zu komplexen Reparaturen – wir bringen Ihr Fahrzeug wieder in Bestform.</p>
+  </a>
+</div>
+
+<div class="service">
+  <a href="reifenservice.html">
+    <img src="bilder/service3.jpg" alt="Reifenservice">
+    <h3>Reifenservice</h3>
+    <p>Reifenwechsel, Einlagerung und Beratung rund um Reifen und Felgen.</p>
+  </a>
+</div>
+
+<div class="service">
+  <a href="tuning.html">
+    <img src="bilder/service4.jpg" alt="Tuning">
+    <h3>Tuning</h3>
+    <p>Leistungssteigerung, Fahrwerksoptimierung und individuelle Fahrzeuganpassungen für mehr Spaß am Fahren.</p>
+  </a>
+</div>
+
+
+
+  </div>
+</section>
+<section id="tuev">
+  <h2>TÜV & Hauptuntersuchung</h2>
+  <div class="tuev-content">
+    
+    <img src="bilder/tuev.jpg" alt="TÜV Abnahme">
+    <div class="tuev-text">
+      <p>Wir bereiten Ihr Fahrzeug professionell auf die Hauptuntersuchung vor und führen die TÜV-Abnahme direkt bei uns in der Werkstatt durch. Dazu gehören:</p>
+      <ul>
+        <li>Hauptuntersuchung (HU)</li>
+        <li>Abgasuntersuchung (AU)</li>
+        <li>Beratung zu erforderlichen Reparaturen vor der Abnahme</li>
+        <li>Terminvereinbarung direkt bei uns</li>
+      </ul>
+      <p>So stellen wir sicher, dass Ihr Fahrzeug sicher und gesetzeskonform unterwegs ist.</p>
+    </div>
+  </div>
+</section>
+
+<section id="info">
+  <div class="about-contact">
+    <div class="about">
+      <h2>Über uns</h2>
+      <p>Unsere Kfz-Werkstatt besteht seit vielen Jahren. Wir bieten kompetente Beratung, fachgerechte Reparaturen und zuverlässigen Service für alle Fahrzeugtypen.</p>
+      <img src="bilder/werkstatt.jpg" alt="Werkstatt">
+    </div>
+    <div class="contact">
+      <h2>Kontakt</h2>
+      <p><strong>Adresse:</strong> Musterstraße 1</p>
+      <p><strong>Telefon:</strong> 01234 / 56789</p>
+      <p><strong>E-Mail:</strong> info@meine-werkstatt.de</p>
+
+      
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+
+<div class="footer-container">
+
+<div class="footer-section">
+<h3>ProDrive</h3>
+<p>Ihre zuverlässige Kfz-Werkstatt für Reparatur, Wartung, Service und Tuning.</p>
+</div>
+
+<div class="footer-section">
+<h3>Kontakt</h3>
+<p>Musterstraße 1</p>
+<p>12345 Musterstadt</p>
+<p>Telefon: 01234 / 56789</p>
+<p>Email: info@prodrive.de</p>
+</div>
+
+<div class="footer-section">
+<h3>Rechtliches</h3>
+<p><a href="impressum.html">Impressum</a></p>
+<p><a href="datenschutz.html">Datenschutz</a></p>
+</div>
+
+</div>
+
+<div class="footer-bottom">
+<p>© 2026 ProDrive – Alle Rechte vorbehalten</p>
+</div>
+
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("menu").classList.toggle("show");
+  }
+</script>
+
+<div id="popup" class="popup">
+
+  <div class="popup-content">
+    
+    <span class="close-btn" onclick="closePopup()">×</span>
+
+    <h2>🎉 Sonderangebot!</h2>
+    
+    <p>
+      Jetzt Inspektion zum Aktionspreis sichern!  
+      Nur für kurze Zeit – vereinbaren Sie noch heute Ihren Termin.
+    </p>
+
+    <a href="termine.html" class="popup-button">Termin buchen</a>
+
+  </div>
+
+</div>
+
+<script>
+function closePopup(){
+  document.getElementById("popup").style.display = "none";
+}
+</script>
+
+</body>
+</html>
