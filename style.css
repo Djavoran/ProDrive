@@ -493,45 +493,51 @@ width:auto;
 /* ===== MENU ICON ===== */
 
 .menu-icon{
-display:none;
-font-size:30px;
+display:block;
+font-size:28px;
 cursor:pointer;
 color:white;
 Z-index:2000;
-}
 
+
+
+/* NEU */
+margin-right:10px;
+padding:8px 12px;
+background:rgba(255,255,255,0.1);
+border-radius:6px;
+}
 
 /* ===== MOBILE MENU ===== */
 
 @media (max-width:768px){
 
-header{
-padding:15px 20px;
-}
-
-.menu-icon{
-display:block;
-}
+@media (max-width:768px){
 
 nav{
-position:absolute;
-top:70px;
-right:0;
+position:fixed;
+top:0;
+right:-220px; /* versteckt */
+width:220px; /* <<< WICHTIG: schmal */
+height:100%;
 background:rgba(0,0,0,0.95);
 flex-direction:column;
-width:100%;
-text-align:center;
-display:none;
-padding:20px 0;
+padding-top:80px;
+transition:right 0.3s ease;
+z-index:1500;
 }
 
-nav a{
-padding:15px;
-border-top:1px solid #333;
-}
-
+/* sichtbar */
 nav.show{
-display:flex;
+right:0;
+}
+
+/* Links */
+nav a{
+padding:15px 20px;
+text-align:left;
+border-bottom:1px solid #333;
+font-size:16px;
 }
 
 }
